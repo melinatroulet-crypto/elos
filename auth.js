@@ -30,7 +30,15 @@
     if (btn) btn.addEventListener("click", function () {
       var provider = new firebase.auth.GoogleAuthProvider();
       provider.setCustomParameters({ prompt: "select_account" });
-      auth.signInWithRedirect(provider);
+      if (msg) msg.textContent = "";
+      // Janela pop-up funciona melhor no Chrome; o redirecionamento é só plano B.
+      auth.signInWithPopup(provider).catch(function (e) {
+        if (e && (e.code === "auth/popup-blocked" || e.code === "auth/operation-not-supported-in-this-environment")) {
+          auth.signInWithRedirect(provider);
+        } else if (e && e.code !== "auth/popup-closed-by-user" && e.code !== "auth/cancelled-popup-request") {
+          if (msg) msg.textContent = "Não foi possível entrar. Tente de novo.";
+        }
+      });
     });
   } catch (e) {
     show(false);
