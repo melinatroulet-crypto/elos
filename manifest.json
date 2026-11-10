@@ -1,0 +1,15 @@
+{
+  "name": "elos — um espaço para nós",
+  "short_name": "elos",
+  "description": "Um espaço para o casal se encontrar, combinar e cuidar.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f5ef",
+  "theme_color": "#31594e",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
