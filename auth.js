@@ -19,6 +19,7 @@
     auth.onAuthStateChanged(function (user) {
       if (user && ALLOWED.indexOf(user.email) !== -1) {
         show(true);
+        if (window.elosStart) window.elosStart(user);
       } else {
         show(false);
         if (user) {

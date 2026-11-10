@@ -1,5 +1,5 @@
 // Service worker: deixa o app abrir sem internet (arquivos do próprio app).
-const CACHE = "elos-v2";
+const CACHE = "elos-v3";
 const SHELL = ["./", "index.html", "style.css", "app.js", "auth.js", "firebase-config.js", "manifest.json", "icon-192.png", "icon-512.png"];
 
 self.addEventListener("install", (e) => {

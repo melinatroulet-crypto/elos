@@ -31,13 +31,15 @@
   </div>
 </section>
 
-<aside><a class="brand" href="#inicio"><span class="bridge">⌒</span> elos<span class="dot">.</span></a><p class="brand-sub">UM ESPAÇO PARA NÓS</p><nav id="nav"></nav><div class="aside-bottom"><div class="couple"><span class="avatar">C</span><span class="avatar second">R</span><div>Clara & Rafael<small>Casal de demonstração</small></div></div><button class="text-btn" id="about">Sobre este protótipo ↗</button></div></aside><div class="shell"><header><span id="breadcrumb">O nosso espaço</span><div class="header-right"><span class="demo-pill">PROTÓTIPO INTERATIVO</span><label class="profile-label">Ver como <select id="profile"><option>Clara</option><option>Rafael</option></select></label></div></header><main id="app"></main><footer>Um pouco de presença. Um passo de cada vez. <span>Feito para apoiar conversas, junto ao cuidado profissional.</span></footer></div><dialog id="modal"><button class="close" aria-label="Fechar">×</button><div id="modal-body"></div></dialog><div id="toast" role="status" aria-live="polite"></div>
+<aside><a class="brand" href="#inicio"><span class="bridge">⌒</span> elos<span class="dot">.</span></a><p class="brand-sub">UM ESPAÇO PARA NÓS</p><nav id="nav"></nav><div class="aside-bottom"><div class="couple"><span class="avatar">M</span><span class="avatar second">F</span><div>Melina & Fabien<small>Um espaço para nós</small></div></div><button class="text-btn" id="about">Sobre este protótipo ↗</button></div></aside><div class="shell"><header><span id="breadcrumb">O nosso espaço</span><div class="header-right"><select id="profile" hidden><option>Melina</option><option>Fabien</option></select></div></header><main id="app"></main><footer>Um pouco de presença. Um passo de cada vez. <span>Feito para apoiar conversas, junto ao cuidado profissional.</span></footer></div><dialog id="modal"><button class="close" aria-label="Fechar">×</button><div id="modal-body"></div></dialog><div id="toast" role="status" aria-live="polite"></div>
 
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 <script src="firebase-config.js"></script>
 <script src="auth.js"></script>
 <script src="app.js"></script>
+<script src="sync.js"></script>
 <script>
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
 </script>
